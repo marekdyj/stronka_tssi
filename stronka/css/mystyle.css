@@ -1,0 +1,137 @@
+	*
+		{
+		padding: 0;
+		margin: 0;
+		box-sizing:border-box;
+		}
+	#pojemnik
+		{
+		background-image:url('../images/tlo-wzor.png');
+		background-repeat:repeat-x;
+		width:980px;
+		margin: 0 auto;
+		overflow: hidden;
+		border-left:2px solid black;
+		}
+	header
+		{
+		height:89px;
+		text-transform:uppercase;
+		text-align:center;
+		font-size:80px;
+		color:white;
+		}
+	#kol_lewa
+		{
+		width: 270px;
+		float: left;
+		text-align:center;
+		position: relative;
+		}
+	#kol_prawa
+		{
+		width:700px;
+		float:right;
+		border-right:2px solid black;
+		border-left:2px solid black;
+		padding-left:10px;
+		}
+	div>ul
+		{
+			padding-top:10px;
+		list-style-type:none;
+		margin-top:30px;
+		}
+	a
+		{
+		display:block;
+		width:230px;
+		height:30px;
+		padding:auto;
+		text-decoration:none;
+		border:double 2px black;
+		text-transform:uppercase;
+		background:rgb(142,210,242);
+		margin:15px auto;
+		text-align:center;
+		font-size:20px;
+		}
+	a:visited
+		{
+		color:black;
+		}
+	a:link
+		{
+		color:black;
+		}
+	a:hover
+		{
+		background-color:rgb(47,73,104);
+		color:white;
+		width:250px;
+		transition: all 0.3s ease;
+		}
+	footer
+		{
+		clear:both;
+		border:2px solid black;
+		border-left:0px;
+		font-size:12px;
+		color:black;
+		text-align:left;
+		padding-top:10px;
+		}
+	p::first-letter
+		{
+		padding-left:10px;
+		}
+	b
+	{
+		font-size:110%;
+	}
+	h1
+	{
+		text-align:center;
+	}
+	td
+	{
+		padding:0 10px;
+	}
+	span
+	{
+		font-size:120%;
+		font-weight:bold;
+		font-style:italic;
+		color:red;
+	}
+	img.planeta
+	{
+		margin:15px auto;
+	}
+	@media screen and (max-width:980px)
+	{
+		body
+		{
+			background-color:lime;
+		}
+	}
+	form
+	{
+		position:absolute;
+		top:15px;
+		left: 40px;
+	}
+	input
+	{
+		font-size:15px;
+		height:22px;
+		width:180px;
+		border:2px solid black;
+	}
+	button
+	{
+		height:22px;
+		width:22px;
+		float:right;
+		margin-left:1px;
+	}

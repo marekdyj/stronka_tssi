@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="PL">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Marek Dyjak"/>
+		<meta name="keywords" content="index,html"/>
+		<meta name="description" content="strona o selektorach"/>
+		<meta name="copyright" content="Marek Dyjak"/>
+		<meta name="robots" content="index,follow"/>
+		<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+		<title>Mapa odnośników</title>
+		<style>
+			ul
+			{
+			margin:30px auto;
+			padding:0;
+			}
+		</style>
+	</head>
+<body>
+	
+	<div id="pojemnik">
+		<header>
+			Dyjak marek
+		</header>
+		<div id="kol_lewa">
+			<ul>
+				<li><a href="../index.html">o mnie</a></li>
+				<li><a href="jednostki.html">jednostki CSS</a></li>
+				<li><a href="selektory.html">selektory</a></li>
+				<li><a href="właściwości.html">właściwości</a></li>
+				<li><a href="arkusze.html">arkusze stylów</a></li>
+				<li><a href="pozycjonowanie.html">pozycjonowanie</a></li>
+				<li><a href="map.html" style="background-color:rgb(47,73,104);color:white;">mapa odnośników</a></li>
+			</ul>
+			<form>
+				<input type="text" placeholder="Wyszukaj" name="wyszukiwarka"/>
+				<button><img src="../images/button_search.jpg" width="19px" height="19px"/></button>
+			</form>
+		</div>
+		<div id="kol_prawa">
+			<h1>Mapa odnośników</h1>
+			<p>Mapę odnośników na obrazku tworzymy za pomocą znacznika <b><i>map</i></b>. Ma on zawsze atrybut <b>name</b> za pomocą którego do obrazka możemy takową mapę dodać (wystarczy w <b>img</b> dodać atrybut <b>usemap="#nazwamapy"</b>). W mapie znajdują się znaczniki <b>area</b> za pomocą których tworzymy niewidoczne kształty i montujemy odnośniki.</p>
+			<h1>Obrazek z nałożoną mapą odnośników</h1>
+			<img class="planeta" src="../images/planets.jpg" alt="mapka odnosnikow z planetami" width="640" height="213" usemap="#planets" title="Układ Słoneczny"/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		</div>
+		<footer>
+			Copyright 2019 by Marek Dyjak.
+		</footer>
+		<map name="planets">
+			<area shape="rectangle" coords="0,0,52,213" alt="slonce" href="http://dydaktyka.fizyka.umk.pl/Astronomia/Slonce/Slonce.jpg" title="Słońce"/>
+			<area shape="circle" coords="72,106,10" alt="merkury" href="http://www.national-geographic.pl/media/cache/default_view/uploads/media/default/0001/93/1c150c562918c76f47099ee48fe522080a489d40.jpeg" title="Merkury"/>
+			<area shape="circle" coords="107,106,15" alt="wenus" href="https://i.wpimg.pl/O/644x362/i.wp.pl/a/f/jpeg/35304/wenus_660.jpeg" title="Wenus"/>
+			<area shape="circle" coords="155,106,17" alt="ziemia" href="https://i.wpimg.pl/O/644x644/d.wpimg.pl/645113368--1189358046/internet-plaska-ziemia.jpg" title="Ziemia"/>
+			<area shape="circle" coords="169,85,5" alt="ksiezyc" href="https://media.wplm.pl/thumbs/ODI1L3VfMS9jY18wNDhhOC9wLzIwMTkvMDEvMDMvODI1LzQ2NC8wMjc1NDJmMjRhMWE0ZGRhYjhiOTJlOWRiOTc0OWVjYS5qcGVn.jpeg" title="Księżyc Ziemi"/>
+			<area shape="circle" coords="200,106,12" alt="mars" href="https://s.hswstatic.com/gif/mars-a1.jpg" title="Mars"/>
+			<area shape="rectangle" coords="228,25,327,180" alt="jowisz" href="https://www.wprost.pl/_thumb/34/95/5bc171c0d462fa5f02365cbde071.jpeg" title="Jowisz"/>
+			<area shape="circle" coords="400,106,57" alt="saturn" href="http://bennettleeross.com/wp-content/uploads/2016/04/Dollarphotoclub_95384048-1280x640.jpg" title="Saturn"/>
+			<area shape="circle" coords="500,106,28" alt="uran" href="https://media.istockphoto.com/photos/the-uranus-with-moons-from-space-showing-all-they-beauty-picture-id489429298?k=6&m=489429298&s=612x612&w=0&h=NM1Io9yjUc8sUMZonCPC6xYavzNbrEH4LphOI6r4D4s=" title="Uran"/>
+			<area shape="circle" coords="570,106,28" alt="neptun" href="https://steemitimages.com/DQmZwMbeRRNcZdUANhUjq3vcMa5asgeZmT2GWWfDxhS8yiq/POSEIDON%203.jpg" title="Neptun"/>
+		</map>
+	</div>

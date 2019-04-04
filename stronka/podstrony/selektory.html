@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="PL">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Marek Dyjak"/>
+		<meta name="keywords" content="index,html"/>
+		<meta name="description" content="strona o selektorach"/>
+		<meta name="copyright" content="Marek Dyjak"/>
+		<meta name="robots" content="index,follow"/>
+		<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+		<title>Selektory HTML</title>
+		<style>
+		ul
+		{
+		margin:30px auto;
+		padding:0;
+		list-style-type:none;
+		}
+		</style>
+	</head>
+<body>
+<div id="pojemnik">
+<header>
+Dyjak marek
+</header>
+<div id="kol_lewa">
+<ul>
+<li><a href="../index.html">o mnie</a></li>
+<li><a href="jednostki.html">jednostki CSS</a></li>
+<li><a href="selektory.html" style="background-color:rgb(47,73,104);color:white;">selektory</a></li>
+<li><a href="właściwości.html">właściwości</a></li>
+<li><a href="arkusze.html">arkusze stylów</a></li>
+ <li><a href="pozycjonowanie.html">pozycjonowanie</a></li>
+ <li><a href="map.html">mapa odnośników</a></li>
+</ul>
+<form>
+	<input type="text" placeholder="Wyszukaj" name="wyszukiwarka"/>
+	<button><img src="../images/button_search.jpg" width="19px" height="19px"/></button>
+</form>
+</div>
+<div id="kol_prawa">
+<h1>SELEKTORY</h1>
+<ul>
+<li><h2>Znacznika/podstawowy</h2><p> Jest to podstawowy selektor, używany w środku <i>style</i>.<br/>
+Jest najczęściej stosowany, szczególnie gdy wszystkie elementy na stronie mają wyglądać jednakowo.</p></li>
+<li><h2>Identyfikatora</h2><p>Ustanawia się specjalny identyfikator, który edytuje się w <i>style</i> zapisując <i><b>#identyfikator</b></i>,<br/>a w znaczniku zapisując atrybut <b><i>id="identyfikator"</i></b>. Każdy identyfikator może być użyty tylko raz w całym kodzie.</p></li>
+<li><h2>Klasy</h2><p>Selektor klasy działa podobnie do selektora identyfikatora, z tą różnicą, że jest wieloktotnego użytku, edytuje się go poprzez <b><i>:klasa</i></b> i dołącza poprzez atrybut <b><i>class="klasa"</i></b></p></li>
+<li><h2>Potomka</h2><p>Działa dla znaczników umieszczonych w innych znacznikach.<br/>Np. <b><i>li p</i></b> pozwoli edytować wszystkie paragrafy znajdujące się w elemencie listy</p></li>
+<li><h2>Dziecka</h2><p>Działa podobnie do selektora potomka, z tą różnicą, że zapisuje się go <b><i>li>p</i></b>, i zmienia tylko elementy znajdujące się bezpośrednio w innych (w tym wypadku wszystkie paragrafy znajdujące się <b>bezpośrednio</b> w elemencie listy)</p></li>
+<li><h2>Pseudoelementu</h2><p>Są to selektory charakterystyczne dla danego znacznika. Zapisuje się je <b><i>znacznik::pseudoelement</i></b> i zmieniają konkretny element danego znacznika (np <b>p:first-letter</b> zmieni pierwszą literę paragrafu)</p></li>
+<li><h2>Pseudoklasy</h2><p>Edytuje wszystkie znaczniki podanego typu.<br/>Zapisuje się je <b><i>znacznik:pseudoklasa</i></b> (np <b>a:hover</b> zmienia wszystkie linki na które najedziemy myszką)</p></li>
+<li><h2>Grupowy</h2><p>Polega na edycji wielu znaczników na raz, wymieniając je i rozdzielejąc przecinkami</p></li>
+</ul>
+</div>
+<footer>
+Copyright 2019 by Marek Dyjak.
+</footer>
+</div>
+</body>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="PL">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Marek Dyjak"/>
+		<meta name="keywords" content="index,html"/>
+		<meta name="description" content="strona o selektorach"/>
+		<meta name="copyright" content="Marek Dyjak"/>
+		<meta name="robots" content="index,follow"/>
+		<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+		<title>Arkusze stylów</title>
+		<style>
+		ul
+		{
+		margin:30px auto;
+		padding:0;
+		}
+		</style>
+	</head>
+<body>
+<div id="pojemnik">
+<header>
+Dyjak marek
+</header>
+<div id="kol_lewa">
+<ul>
+<li><a href="../index.html">o mnie</a></li>
+<li><a href="jednostki.html">jednostki CSS</a></li>
+<li><a href="selektory.html">selektory</a></li>
+<li><a href="właściwości.html">właściwości</a></li>
+<li><a href="arkusze.html" style="background-color:rgb(47,73,104);color:white;">arkusze stylów</a></li>
+<li><a href="pozycjonowanie.html">pozycjonowanie</a></li>
+<li><a href="map.html">mapa odnośników</a></li>
+</ul>
+<form>
+	<input type="text" placeholder="Wyszukaj" name="wyszukiwarka"/>
+	<button><img src="../images/button_search.jpg" width="19px" height="19px"/></button>
+</form>
+</div>
+<div id="kol_prawa">
+<h1>Arkusze stylów</h1>
+<ul>
+<li><h2>Zewnętrzny</h2><p>Jest to arkusz stylów znajdujący się poza stroną. <br/> Jest formatu .css i dołącza się go do strony za pomocą znacznika <i><b>link</b></i> umieszczaneo w <i><b>headzie</b></i>. Jest podrzędny w stosunku do wszystkich innych arkuszy</p></li>
+<li><h2>Wewnętrzny</h2><p>Znajduje się w <i><b>headzie</b></i>. Jest umieszczany za pomocą znacznika <i><b>style</b></i> i selektorów w nim się znajdujących.<br/>Jest nadrzędny w stosunku do arkusza zewnętrznego i podrzędny w stosunku do arkusza lokalnego.</p></li>
+<li><h2>Lokalny</h2><p>Arkusz umieszczany bezpośrednio w znaczniku za pomocą atrybutu <b><i>style</i></b>.<br/>Dotyczy tylko tego znacznika i jest nadrzędny w stosunku do wszystkich innych arkuszy.</p></li>
+</ul>
+<br/>
+<br/>
+<br/>
+<br/>
+</div>
+<footer>
+Copyright 2019 by Marek Dyjak.
+</footer>
+</div>
+</body>
