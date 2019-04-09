@@ -9,13 +9,6 @@
 		<meta name="robots" content="index,follow"/>
 		<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
 		<title>Pozycjonowanie</title>
-		<style>
-		ul
-		{
-		margin:30px auto;
-		padding:0;
-		}
-		</style>
 	</head>
 <body>
 <div id="pojemnik">
@@ -23,7 +16,7 @@
 Dyjak marek
 </header>
 <div id="kol_lewa">
-<ul>
+<ul class="zewn">
 <li><a href="../index.html">o mnie</a></li>
 <li><a href="jednostki.html">jednostki CSS</a></li>
 <li><a href="selektory.html">selektory</a></li>
@@ -31,6 +24,11 @@ Dyjak marek
 <li><a href="arkusze.html">arkusze stylów</a></li>
 <li><a href="pozycjonowanie.html" style="background-color:rgb(47,73,104);color:white;">pozycjonowanie</a></li>
 <li><a href="map.html">mapa odnośników</a></li>
+<li><a href="#">stronki ćwiczebne</a>
+<ul>
+<li><a href="slider.html">slider</a></li>
+</ul>
+</li>
 </ul>
 <form>
 	<input type="text" placeholder="Wyszukaj" name="wyszukiwarka"/>
@@ -38,16 +36,16 @@ Dyjak marek
 </form>
 </div>
 <div id="kol_prawa">
-<h1>Właściwości</h1>
-<p>Właściwości służą do edytowania sposobu wyświetlania danego tekstu.</p>
-<h1>Najczęściej używane wartości CSS</h1>
+<h1>Pozycjonowanie</h1>
+<p>Pozycjonowanie służy do określenia pozycji elementu na stronie</p>
+<h1>Typy pozycjonowania HTML</h1>
 <ul>
-<li><h2>Tekst</h2><p>Zmienia nam właściwości tekstu, położenie itd. (właściwość <b><i>text</i></b>)</p></li>
-<li><h2>Czcionka</h2><p>Zmienia czcionkę, jej wielkość i kształt (właściwość <b><i>font</i></b>)</p></li>
-<li><h2>Rozmiary</h2><p>Zmienia wielkość danego elementu, jego długość i szerokość (właściwości <b><i>width</i></b> i <b><i>height</i></b>)</p></li>
-<li><h2>Tło</h2><p>Zmienia tło wybranego elementu (właściwość <b><i>background</i></b>)</p></li>
-<li><h2>Marginesy</h2><p>Zmienia wielkość obramowania wewnętrznego (właściwość <b><i>padding</i></b>) i zewnętrznego (właściwość <b><i>margin</i></b>)</p></li>
-<li><h2>Obramowanie</h2><p>Zmienia kolor i wielkość obramowania (właściwość <b><i>border</i></b>)</p></li>
+<li><h2>Statyczne</h2><p>Pozycja <b><i>static</i></b> uniemożliwia stosowanie <b>left, right, top, bottom</b></p></li>
+<li><h2>Relatywne</h2><p>Pozycja <b><i>relative</i></b> umożliwia stosowanie <b>left, right, top, bottom</b>, ale na stronie zostaje puste miejsce w którym znajdowałbysię dany element.</p></li>
+<li><h2>Absolutne</h2><p>Pozycja <b><i>absolute</i></b>działa tak jak relative, ale nie zostawia pustego miejsca na stronie</p></li>
+<li><h2>Kontekstowe</h2><p>Polega na zagnieżdżeniu elementu z pozycją <b><i>absolute</i></b> w elemencie <b><i>relative</i></b> które powoduje ustawienie tego elementu względem elementu nadrzędnego</p></li>
+<li><h2>Ustawione</h2><p>Pozycja <b><i>fixed</i></b> ustawia dany element nie na stronie tylko w oknie przeglądarki. Taki element przesuwa się razem ze scrollowaną stroną.</p></li>
+<li><h2>Przyklejone</h2><p>Przy użyciu pozycji <b><i>sticky</i></b> element dopuki ma miejsce to pozostaje na nim, natomiast kiedy miejsca zabraknie to przesuwa się na stronie tak jakby miał pozycję <b><i>fixed</i></b></p></li>
 </ul>
 </div>
 <footer>
