@@ -35,6 +35,8 @@
 		border-right:2px solid black;
 		border-left:2px solid black;
 		padding-left:10px;
+		min-height:600px;
+		padding-bottom:20px;
 		}
 	div>ul
 		{
@@ -166,3 +168,4 @@
 		color:white;
 		width:230px;
 		}
+	
